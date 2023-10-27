@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/d30f293727.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <header class="header">
+      <a href="#" class="logo">MH SHOAIB</a>
+      <nav class="navbar">
+         <a href="#" style="--i:1" class="active">HOME</a>
+         <a href="#" style="--i:2">SKILLS</a>
+         <a href="#" style="--i:3">ABOUT</a>
+         <a href="#" style="--i:4">PROTFOLIO</a>
+         <a href="#" style="--i:5">CONTACT</a>
+      </nav>
+   </header>
+   <!-- HOME -->
+   <section class="home">
+      <div class="home-content">
+         <h3>Hallo! It's Me</h3>
+         <h1>SHOAIB</h1>
+         <h3>And I'm A <span class="multiText"></span></h3>
+         <p style="--i:10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate distinctio unde,
+            explicabo aspernatur odio corrupti quibusdam suscipit expedita porro officia.</p>
+         <div class="socal-media">
+            <a href="https://www.facebook.com/monjurulhaqueshoaib360" style="--i:6"><i
+                  class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/monjurulhaqueshoaib360/" style="--i:7"><i
+                  class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.behance.net/mhshoaib360" style="--i:8"><i class="fa-brands fa-square-behance"></i></a>
+            <a href="https://www.linkedin.com/in/monjurul-haque-shoaib-71a44a281/" style="--i:9"><i
+                  class="fa-brands fa-linkedin"></i></a>
+         </div>
+         <a href="" class="btn">Download Cv</a>
+      </div>
+      <div class="home-img">
+         <img src="s.png" alt="">
+      </div>
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+      var typingEffect = new Typed(".multiText", {
+         strings: ["Graphic Designer", "Youtuber", "Businessman"],
+         loop: true,
+         typeSpeed: 90,
+         backSpeed: 70,
+         backDelay: 1200,
+      })
+   </script>
+
+
+
+   <div class="cursor"></div>
+   <script>
+   const cursor = document.querySelector(".cursor");
+
+      document.addEventListener('mousemove', (e)=>{
+      let X = e.pageX;
+      let Y  = e.pageY;
+
+      cursor.style.left = X + "px";
+      cursor.style.top = Y + "px";
+      cursor.style. display = "block";
+      });
+
+      document.addEventListener('mouseout',()=>{
+      cursor.style. display="none";
+      }
+      );
+</script>
+</body>
+</html>
